@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^domain1.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.domain1.com [NC]
+RewriteRule ^(.*) index.php/$1 
